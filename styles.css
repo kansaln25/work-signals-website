@@ -30,15 +30,25 @@ body {
 
 /* HERO — thinner + intentional */
 .hero {
+    position: relative;
     text-align: center;
-    padding: 80px 24px 60px; /* reduced height */
+    padding: 80px 24px 60px;
     background: #FFFFFF;
-    border-bottom: 1px solid #E5E5E5; /* subtle anchor line */
+    border-bottom: 1px solid #E5E5E5;
+    overflow: hidden;
 }
 
-.hero h1 {
-    font-size: 3.2rem;
-    font-weight: 700;
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+
+    background-image:
+        linear-gradient(45deg, rgba(0, 0, 0, 0.035) 1px, transparent 1px),
+        linear-gradient(-45deg, rgba(0, 0, 0, 0.035) 1px, transparent 1px);
+
+    background-size: 24px 24px; /* slightly larger = more elegant on light UI */
 }
 
 /* SECTIONS */
