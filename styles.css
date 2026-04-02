@@ -29,7 +29,17 @@ body {
 }
 
 /* HERO — thinner + intentional */
-.hero { text-align: center; padding: 80px 24px 60px; /* reduced height */ background: #FFFFFF; border-bottom: 1px solid #E5E5E5; /* subtle anchor line */ } .hero h1 { font-size: 3.2rem; font-weight: 700; }
+.hero {
+    text-align: center;
+    padding: 80px 24px 60px; /* reduced height */
+    background: #FFFFFF;
+    border-bottom: 1px solid #E5E5E5; /* subtle anchor line */
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
 
 /* SECTIONS */
 .section {
