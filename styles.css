@@ -40,6 +40,13 @@ body {
     font-weight: 700;
 }
 
+.tagline {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #4A5568;
+    margin-top: 8px;
+}
+
 
 /* SECTIONS */
 .section {
