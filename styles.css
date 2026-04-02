@@ -30,15 +30,14 @@ body {
 
 /* HERO — thinner + intentional */
 .hero {
-    text-align: center;
-    padding: 80px 24px 60px; /* reduced height */
-    background: #FFFFFF;
-    border-bottom: 1px solid #E5E5E5; /* subtle anchor line */
+    padding: 100px 24px 80px;
+    background: linear-gradient(to bottom, #FFFFFF, #F7F7F7);
 }
 
-.hero h1 {
-    font-size: 3.2rem;
-    font-weight: 700;
+.hero p {
+    margin-top: 16px;
+    font-size: 1.2rem;
+    color: #4A5568;
 }
 
 /* SECTIONS */
