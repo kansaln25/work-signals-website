@@ -27,12 +27,13 @@ body {
 .alt2 {
     background: #FFFFFF;
 }
-/*hero*/
+
+/* HERO */
 .hero {
     text-align: center;
-    padding: 80px 24px 60px; /* reduced height */
+    padding: 80px 24px 60px;
     background: #FFFFFF;
-    border-bottom: 1px solid #E5E5E5; /* subtle anchor line */
+    border-bottom: 1px solid #E5E5E5;
 }
 
 .hero h1 {
@@ -47,7 +48,6 @@ body {
     margin-top: 8px;
 }
 
-
 /* SECTIONS */
 .section {
     padding: 100px 0;
@@ -60,6 +60,21 @@ body {
     font-weight: 700;
 }
 
+/* BOOK GRID (NEW) */
+.book-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+    align-items: start;
+    margin-top: 40px;
+}
+
+.book-cover {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
 /* AUTHORS */
 .authors-grid {
     display: grid;
@@ -68,7 +83,6 @@ body {
     margin-top: 40px;
 }
 
-/* Center image + name */
 .author {
     text-align: center;
 }
@@ -90,12 +104,11 @@ body {
     text-align: center;
 }
 
-/* Bio text stays readable */
 .author p {
     color: #4A5568;
-    text-align: left; /* keeps long bios readable */
+    text-align: left;
     margin: 0 auto;
-    max-width: 650px; /* improves readability */
+    max-width: 650px;
 }
 
 /* ENDORSEMENTS */
@@ -153,5 +166,15 @@ body {
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.4rem;
+    }
+
+    .book-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .book-cover {
+        max-width: 260px;
+        margin: 0 auto 24px;
     }
 }
